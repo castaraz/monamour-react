@@ -6,7 +6,6 @@ export default function RecetasPreview() {
   const [q, setQ] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert")
@@ -19,9 +18,7 @@ export default function RecetasPreview() {
       .finally(() => setLoading(false));
   }, []);
 
-  const filtradas = recetas
-    .filter(r => r.strMeal.toLowerCase().includes(q.toLowerCase()))
-    .slice(0, 6);
+
 return (
     <>
       <section className="contact-form api-recetas" aria-labelledby="recetas-home-title">
