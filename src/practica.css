@@ -688,7 +688,7 @@ footer {
     height: auto;                 
     padding: 0.75rem;             
   }
-  /
+  
 .api-recetas {
     
     max-width: 900px;
@@ -735,7 +735,7 @@ footer {
     border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
-    transition: transform .15s ease, background .2s ease;
+    transition: transform .15s ease,  .2s ease;
   }
   .btn-recetas:hover {
     background: #8b5fbf;
